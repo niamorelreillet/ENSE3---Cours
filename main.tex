@@ -1,0 +1,175 @@
+\pdfminorversion=4
+\documentclass[usenames,dvipsnames]{beamer}
+%Pour impression des transparents sans animations
+%option trans (à préciser aussi dans les \only
+%\documentclass[trans]{beamer}
+%
+%Pour impression des transparents sur papier (pour les CRR)
+%\documentclass[handout]{beamer}
+%
+
+\usetheme{cea2019}
+
+\setbeamerfont{structure}{size=\small}
+\setbeamerfont{title page}{size=\Large,parent=structure}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries,parent=structure}
+\setbeamerfont{headline}{size=\small}
+\setbeamertemplate{bibliography item}[mybibitem]
+\setbeamerfont{bibliography entry author}{shape=\upshape,size=\tiny}%
+\setbeamerfont{bibliography entry title}{shape=\upshape,size=\tiny}
+\setbeamerfont{bibliography entry journal}{shape=\upshape,size=\tiny}
+\setbeamerfont{bibliography entry note}{shape=\upshape,size=\tiny}
+\setbeamerfont{itemize/enumerate body}{size=\footnotesize}
+\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+\setbeamerfont{itemize/enumerate subsubbody}{size=\scriptsize}
+\setbeamerfont{block body}{size=\footnotesize,parent={structure}}
+\setbeamerfont{block body alerted}{parent={block body}}
+\setbeamerfont{block body example}{parent={block body}}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries,parent={block body}}
+\setbeamerfont{section in head/foot}{size=\scriptsize,shape=\scshape,series=\bfseries}
+\setbeamerfont{subsection in head/foot}{shape=\upshape,parent={section in head/foot}}
+\setbeamerfont{section in toc}{parent=structure,series=\bfseries}
+\setbeamerfont{caption}{size=\scriptsize, parent=structure}
+
+\setbeamertemplate{caption}{\centering\insertcaption\par}
+\renewcommand{\emph}[1]{\textcolor{cea8}{\textit{#1}}}
+\bibliographystyle{apalike}
+
+
+\usepackage{tabularx}
+\newcommand{\n}{\tabularnewline}
+\newcolumntype{C}{>{\centering}X}
+\newcolumntype{R}{>{\raggedleft}X} 
+\newcolumntype{L}{>{\raggedright}X} 
+\newcolumntype{M}[1]{>{\centering}m{#1}}
+\usepackage{multirow}
+\newenvironment{legend}%
+{\tabular{r>{\small} l}}%
+{\endtabular}
+\usepackage{hyperref}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{mhchem}
+\usepackage{wasysym}
+\usepackage{animate}
+\usepackage{multimedia}
+\usepackage{fourier-orns}
+
+\newcommand{\grad}[1]{\nabla #1}
+\renewcommand{\div}[1]{\nabla \cdot #1}
+\newcommand{\Lapl}[1]{\Delta #1}
+
+\newenvironment{remark}[1][\textit{Nota Bene}]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries \rule{1ex}{1ex} #1}]\ignorespaces}{\rule{1ex}{1ex} \end{trivlist}\ignorespacesafterend}
+
+%\usepackage[default,scale=0.85]{opensans} 
+%\usepackage{lmodern} 
+%
+\titre{\normalsize{Accidents graves des réacteurs nucléaires} \\ \Large{Comportement et rétention du corium en cuve d'un réacteur à eau légère}}
+\evenement{Cycles nucléaires - filière ENSE3/IEN}
+\auteurs{\textit{Romain Le Tellier}, Jules Delacroix, Pascal Piluso, CEA Cadarache \\ {\scriptsize \href{mailto:romain.le-tellier@cea.fr}{(romain.le-tellier@cea.fr)}}}
+\datedocument{14 Janvier 2020}
+\auteurprincipal{Romain Le Tellier}
+%%
+\begin{document}
+
+%% TITLE PAGE %%
+\PageTitre{}
+%%
+
+%%%%%%%%
+\section{Objectifs pédagogiques}
+\Titre{Objectifs pédagogiques}
+\begin{frame}[fragile]
+\begin{itemize}
+\item Connaître les \emph{phénomènes physiques} déterminant vis-à-vis du comportement du \emph{corium dans le fond de cuve} et l'évaluation du risque de percement de la cuve d'un réacteur à eau légère
+\item Faire le lien entre une partie de ces phénomènes (thermohydrauliques) et l'enseignement général en \emph{mécanique des fluides, thermohydraulique} dispensé à l'ENSE3
+\item Être sensibilisé à la \emph{complexité supplémentaire} apportée par le caractère \emph{``multicomposant''} du fluide ``corium'' (couplage thermohydraulique-thermochimie)
+\item Avoir une idée concrète des \emph{activités de R\&D menées au CEA} sur ce sujet et des opportunités (stages, thèses) associées !
+\end{itemize}
+\end{frame}
+%%
+
+%%%%%%%%
+%\setbeamertemplate{background canvas}[annexe]
+\section*{Sommaire}
+%\Titre{Sommaire}
+\begin{frame}[fragile]
+\frametitle{Sommaire}
+  \linespread{0.9}
+  \tableofcontents[sectionstyle=hide/show, subsectionstyle=hide/show/show,sections={2-}, firstsection=2]
+  \linespread{1}
+\end{frame}
+%\setbeamertemplate{background canvas}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{part1.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{TD : évaluation du bilan thermique intégral}
+\Intercalaire{TD : évaluation du bilan thermique intégral}
+\Titre{TD : évaluation du bilan thermique intégral}
+\begin{frame}[fragile]
+\begin{columns}[T]
+    \begin{column}{0.4\textwidth}
+      \begin{figure}[H]
+\centering \includegraphics[height=0.4\textheight]{Figures/TD_2layer.eps}
+\caption{Configuration à deux couches et notations des flux et températures}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+    \begin{itemize}
+    \item Objectif: évaluation de la \emph{répartition de la puissance et du flux de chaleur} aux interfaces d'un bain de corium
+    \item \emph{Configuration stationnaire à deux couches} :
+    \begin{itemize} 
+    \item en bas : une phase oxyde qui porte toute la puissance résiduelle entourée d'une croûte réfractaire 
+    \item en haut : de l'acier liquide en contact direct avec la paroi de la cuve en fusion
+    \end{itemize}
+    \item Hypothèses et fermetures classiquement utilisées dans les codes de calculs (et que l'on vient de présenter pour la plupart)
+    \end{itemize}
+    \end{column}
+\end{columns}
+\vskip \baselineskip
+\textit{cf.} description TD et notebooks Jupyter \\ {\scriptsize (\href{https://mybinder.org/v2/gh/niamorelreillet/ENSE3---TD/master?urlpath=lab}{https://mybinder.org/v2/gh/niamorelreillet/ENSE3---TD/master?urlpath=lab})}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{part2.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{En guise de conclusion sur l'IVR}
+\Titre{En guise de conclusion sur l'IVR}
+\begin{frame}[fragile]
+\begin{itemize}
+\item L'\emph{IVR} est une \emph{stratégie ``séduisante'' de gestion d'un accident grave}
+\item Mais, en l'état des connaissances sur le comportement du corium en fond de cuve, une démonstration ``forte'' requiert :
+\begin{itemize}
+\item puissance résiduelle ``limitée'' $\rightarrow$ réacteurs de ``faible puissance'' (e.g. VVER-440) 
+\item et/ou ``élimination'' par conception des transitoires ``rapides'' (``Large Break Loss Of Coolant Accident'')
+\item et/ou éléments de conception spécifiques (e.g. abaissement de la plaque support c\oe ur)
+\end{itemize}
+\item Ainsi, \emph{pour réacteurs de ``forte puissance'' avec IVR} (e.g. AP-1000, APR-1400, HPR-1000) : \\ \emph{R\&D (intéressante !) à poursuivre} / 
+\emph{échec de l'IVR à étudier} $\rightarrow$ corium hors de la cuve
+\end{itemize}
+\begin{ceaexample2block}{Au prochain cours (avec J. Delacroix)}
+Comportement du corium hors cuve \\ (échec de l'IVR ou stratégie \emph{``Ex-Vessel Retention''} - EVR)
+\begin{itemize}
+  \item Interaction Corium-Eau et \emph{risque d'explosion vapeur}
+  \item \emph{Etalement du corium} (avec ou sans eau)
+  \item \emph{Interaction Corium-Béton} (avec ou sans eau)
+\end{itemize}
+\end{ceaexample2block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DernierePage{Merci pour votre attention \\~\\ Intéressés ? \\ Stages, thèses proposés ... \\ Ecrivez-moi !}
+\Annexes
+\section*{Références}
+\Titre{Références}
+\begin{frame}[fragile,allowframebreaks]
+  \bibliography{../References/lma-jabref}
+\end{frame}
+%%
+\end{document}
+%% definition du dictionnaire local
+<!-- Local IspellDict: francais -->

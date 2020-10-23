@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="767.3759pt"
+   style="width:1573px;height:767px;"
+   version="1.1"
+   viewBox="0 0 1573 767"
+   width="1573.0496pt"
+   id="svg2"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="corium_en_cuve.svg">
+  <metadata
+     id="metadata227">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview225"
+     showgrid="false"
+     inkscape:zoom="0.58688461"
+     inkscape:cx="896.53954"
+     inkscape:cy="479.60995"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <filter
+       height="300%"
+       id="f1"
+       width="300%"
+       x="-1"
+       y="-1">
+      <feGaussianBlur
+         result="blurOut"
+         stdDeviation="2.8368794326241136"
+         id="feGaussianBlur7" />
+      <feColorMatrix
+         in="blurOut"
+         result="blurOut2"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"
+         id="feColorMatrix9" />
+      <feOffset
+         dx="5.673758865248227"
+         dy="5.673758865248227"
+         in="blurOut2"
+         result="blurOut3"
+         id="feOffset11" />
+      <feBlend
+         in="SourceGraphic"
+         in2="blurOut3"
+         mode="normal"
+         id="feBlend13" />
+    </filter>
+  </defs>
+  <polygon
+     id="polygon17"
+     style="fill:#ffffff;stroke:#000000;stroke-width:2.83687949;filter:url(#f1)"
+     points="1059.5745,645.8112 1563.1206,645.8112 1563.1206,757.4468 866.6667,757.4468 866.6667,614.1844 866.6667,614.1844 1049.6454,614.1844 " />
+  <line
+     id="line19"
+     y2="645.81122"
+     y1="645.81122"
+     x2="1059.5745"
+     x1="866.66669"
+     style="stroke:#000000;stroke-width:2.83687949" />
+  <text
+     style="font-size:19.85820007px;font-weight:bold;fill:#000000;font-family:sans-serif"
+     id="text21"
+     y="636.8725"
+     x="870.922"
+     textLength="174.4681"
+     lengthAdjust="spacingAndGlyphs"
+     font-weight="bold"
+     font-size="19.8582">phases liquides</text>
+  <polygon
+     id="polygon23"
+     style="fill:#ffffff;stroke:#000000;stroke-width:2.83687949;filter:url(#f1)"
+     points="124.8227,655.031 825.5319,655.031 825.5319,748.227 19.8582,748.227 19.8582,623.4043 19.8582,623.4043 114.8936,623.4043 " />
+  <line
+     id="line25"
+     y2="655.03101"
+     y1="655.03101"
+     x2="124.8227"
+     x1="19.8582"
+     style="stroke:#000000;stroke-width:2.83687949" />
+  <text
+     style="font-size:19.85820007px;font-weight:bold;fill:#000000;font-family:sans-serif"
+     id="text27"
+     y="646.09241"
+     x="24.113501"
+     textLength="86.5248"
+     lengthAdjust="spacingAndGlyphs"
+     font-weight="bold"
+     font-size="19.8582">croûtes</text>
+  <polygon
+     id="polygon29"
+     style="fill:#ffffff;stroke:#000000;stroke-width:2.83687949;filter:url(#f1)"
+     points="377.305,54.3218 1114.8936,54.3218 1114.8936,590.0709 245.3901,590.0709 245.3901,22.695 245.3901,22.695 367.3759,22.695 " />
+  <line
+     id="line31"
+     y2="54.3218"
+     y1="54.3218"
+     x2="377.30499"
+     x1="245.39011"
+     style="stroke:#000000;stroke-width:2.83687949" />
+  <text
+     style="font-size:19.85820007px;font-weight:bold;fill:#000000;font-family:sans-serif"
+     id="text33"
+     y="45.383099"
+     x="249.6454"
+     textLength="113.4752"
+     lengthAdjust="spacingAndGlyphs"
+     font-weight="bold"
+     font-size="19.8582">interfaces</text>
+  <polygon
+     id="polygon35"
+     style="fill:#ffffff;stroke:#000000;stroke-width:2.83687949;filter:url(#f1)"
+     points="553.1915,92.6197 1103.5461,92.6197 1103.5461,204.2553 380.1418,204.2553 380.1418,60.9929 380.1418,60.9929 543.2624,60.9929 " />
+  <line
+     id="line37"
+     y2="92.619698"
+     y1="92.619698"
+     x2="553.19153"
+     x1="380.14182"
+     style="stroke:#000000;stroke-width:2.83687949" />
+  <text
+     style="font-size:19.85820007px;font-weight:bold;fill:#000000;font-family:sans-serif"
+     id="text39"
+     y="83.681"
+     x="384.39719"
+     textLength="154.6099"
+     lengthAdjust="spacingAndGlyphs"
+     font-weight="bold"
+     font-size="19.8582">liquide/liquide</text>
+  <polygon
+     id="polygon41"
+     style="fill:#ffffff;stroke:#000000;stroke-width:2.83687949;filter:url(#f1)"
+     points="422.695,271.3431 1103.5461,271.3431 1103.5461,400 256.7376,400 256.7376,239.7163 256.7376,239.7163 412.766,239.7163 " />
+  <line
+     id="line43"
+     y2="271.34311"
+     y1="271.34311"
+     x2="422.69501"
+     x1="256.73761"
+     style="stroke:#000000;stroke-width:2.83687949" />
+  <text
+     style="font-size:19.85820007px;font-weight:bold;fill:#000000;font-family:sans-serif"
+     id="text45"
+     y="262.40439"
+     x="260.99289"
+     textLength="147.5177"
+     lengthAdjust="spacingAndGlyphs"
+     font-weight="bold"
+     font-size="19.8582">liquide/solide</text>
+  <polygon
+     id="polygon47"
+     style="fill:#ffffff;stroke:#000000;stroke-width:2.83687949;filter:url(#f1)"
+     points="588.6525,467.0878 991.4894,467.0878 991.4894,578.7234 256.7376,578.7234 256.7376,435.461 256.7376,435.461 578.7234,435.461 " />
+  <line
+     id="line49"
+     y2="467.0878"
+     y1="467.0878"
+     x2="588.65253"
+     x1="256.73761"
+     style="stroke:#000000;stroke-width:2.83687949" />
+  <text
+     style="font-size:19.85820007px;font-weight:bold;fill:#000000;font-family:sans-serif"
+     id="text51"
+     y="458.14911"
+     x="260.99289"
+     textLength="313.4752"
+     lengthAdjust="spacingAndGlyphs"
+     font-weight="bold"
+     font-size="19.8582">liquide ou solide/gaz ou eau</text>
+  <rect
+     id="rect53"
+     y="652.4823"
+     x="1268.7943"
+     width="282.2695"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="93.062897" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="675.17731"
+     sodipodi:cx="1321.3475"
+     id="ellipse55"
+     style="fill:#ff0000;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="675.17731"
+     cx="1321.3475" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path57"
+     d="m 1318.8431,672.9832 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text59"
+     y="681.06989"
+     x="1348.156"
+     textLength="167.3759"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermohydraulique</text>
+  <line
+     id="line61"
+     y2="697.87231"
+     y1="697.87231"
+     x2="1549.6454"
+     x1="1270.2128"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text63"
+     y="718.02899"
+     x="1277.3051"
+     textLength="259.5745"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">écoulements de type convection</text>
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text65"
+     y="736.19171"
+     x="1277.3051"
+     textLength="265.2482"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">naturelle laminaire ou turbulente</text>
+  <rect
+     id="rect67"
+     y="661.70209"
+     x="878.01422"
+     width="340.42551"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="74.900299" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="684.39722"
+     sodipodi:cx="981.91492"
+     id="ellipse69"
+     style="fill:#ffd700;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="684.39722"
+     cx="981.91492" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path71"
+     d="m 979.4105,682.203 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text73"
+     y="690.28979"
+     x="1010.9929"
+     textLength="120.5674"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermochimie</text>
+  <line
+     id="line75"
+     y2="707.09222"
+     y1="707.09222"
+     x2="1217.0212"
+     x1="879.43262"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text77"
+     y="727.2489"
+     x="886.52478"
+     textLength="323.4043"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">diffusion multicomposant multiphasique</text>
+  <rect
+     id="rect79"
+     y="661.70209"
+     x="421.27661"
+     width="136.1702"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="74.900299" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="684.39722"
+     sodipodi:cx="442.55319"
+     id="ellipse81"
+     style="fill:#ff0000;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="684.39722"
+     cx="442.55319" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path83"
+     d="m 440.0488,682.203 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text85"
+     y="690.28979"
+     x="462.41129"
+     textLength="90.7801"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermique</text>
+  <line
+     id="line87"
+     y2="707.09222"
+     y1="707.09222"
+     x2="556.02838"
+     x1="422.69501"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text89"
+     y="727.2489"
+     x="429.7872"
+     textLength="86.5248"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">conduction</text>
+  <rect
+     id="rect91"
+     y="661.70209"
+     x="31.2057"
+     width="340.42551"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="74.900299" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="684.39722"
+     sodipodi:cx="135.1064"
+     id="ellipse93"
+     style="fill:#ffd700;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="684.39722"
+     cx="135.1064" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path95"
+     d="m 132.602,682.203 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text97"
+     y="690.28979"
+     x="164.1844"
+     textLength="120.5674"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermochimie</text>
+  <line
+     id="line99"
+     y2="707.09222"
+     y1="707.09222"
+     x2="370.2128"
+     x1="32.6241"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text101"
+     y="727.2489"
+     x="39.716301"
+     textLength="323.4043"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">diffusion multicomposant multiphasique</text>
+  <rect
+     id="rect103"
+     y="661.70209"
+     x="607.09222"
+     width="207.09219"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="74.900299" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="684.39722"
+     sodipodi:cx="628.36877"
+     id="ellipse105"
+     style="fill:#a52a2a;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="684.39722"
+     cx="628.36877" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path107"
+     d="m 625.8644,682.203 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text109"
+     y="690.28979"
+     x="648.22699"
+     textLength="161.7021"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermomécanique</text>
+  <line
+     id="line111"
+     y2="707.09222"
+     y1="707.09222"
+     x2="812.76599"
+     x1="608.51062"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text113"
+     y="727.2489"
+     x="615.60278"
+     textLength="190.0709"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">comportement et tenue</text>
+  <rect
+     id="rect115"
+     y="99.290802"
+     x="794.32617"
+     width="297.87231"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="93.062897" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="121.9858"
+     sodipodi:cx="864.18439"
+     id="ellipse117"
+     style="fill:#ff0000;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="121.9858"
+     cx="864.18439" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path119"
+     d="m 861.68,119.7917 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text121"
+     y="127.8784"
+     x="893.26239"
+     textLength="146.0993"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">hydrodynamique</text>
+  <line
+     id="line123"
+     y2="144.68089"
+     y1="144.68089"
+     x2="1090.7802"
+     x1="795.74469"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text125"
+     y="164.83749"
+     x="802.83691"
+     textLength="280.8511"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">instabilités de type Rayleigh-Taylor</text>
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text127"
+     y="183.0002"
+     x="802.83691"
+     textLength="215.6028"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">transitoire de stratification</text>
+  <rect
+     id="rect129"
+     y="99.290802"
+     x="441.84399"
+     width="302.12769"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="93.062897" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="121.9858"
+     sodipodi:cx="526.5957"
+     id="ellipse131"
+     style="fill:#ffd700;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="121.9858"
+     cx="526.5957" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path133"
+     d="m 524.0913,119.7917 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text135"
+     y="127.8784"
+     x="555.67383"
+     textLength="120.5674"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermochimie</text>
+  <line
+     id="line137"
+     y2="144.68089"
+     y1="144.68089"
+     x2="742.55322"
+     x1="443.26239"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text139"
+     y="164.83749"
+     x="450.35461"
+     textLength="285.1064"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">transferts de masse accompagnés</text>
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text141"
+     y="183.0002"
+     x="450.35461"
+     textLength="278.0142"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">de phénomènes d'oxydo-réduction</text>
+  <rect
+     id="rect143"
+     y="295.74469"
+     x="732.62408"
+     width="358.8652"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="74.900299" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="318.4397"
+     sodipodi:cx="860.63831"
+     id="ellipse145"
+     style="fill:#ff0000;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="318.4397"
+     cx="860.63831" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path147"
+     d="m 858.1339,316.2456 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text149"
+     y="324.33231"
+     x="889.71631"
+     textLength="90.7801"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermique</text>
+  <line
+     id="line151"
+     y2="341.1348"
+     y1="341.1348"
+     x2="1090.0709"
+     x1="734.0426"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text153"
+     y="361.29141"
+     x="741.13483"
+     textLength="341.844"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">front de fusion / dissolution / solidification</text>
+  <rect
+     id="rect155"
+     y="278.01419"
+     x="318.4397"
+     width="364.539"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="111.2256" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="300.7092"
+     sodipodi:cx="431.5603"
+     id="ellipse157"
+     style="fill:#ffd700;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="300.7092"
+     cx="431.5603" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path159"
+     d="m 429.0559,298.5151 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text161"
+     y="306.60181"
+     x="460.63831"
+     textLength="120.5674"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermochimie</text>
+  <line
+     id="line163"
+     y2="323.4043"
+     y1="323.4043"
+     x2="681.5603"
+     x1="319.85818"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text165"
+     y="343.56091"
+     x="326.95041"
+     textLength="347.5177"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">transferts de masse associés à la fusion /</text>
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text167"
+     y="361.7236"
+     x="326.95041"
+     textLength="323.4043"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">dissolution / solidification accompagnés</text>
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text169"
+     y="379.88629"
+     x="326.95041"
+     textLength="278.0142"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">de phénomènes d'oxydo-réduction</text>
+  <rect
+     id="rect171"
+     y="473.75891"
+     x="736.87939"
+     width="242.55321"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="93.062897" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="496.45389"
+     sodipodi:cx="803.9007"
+     id="ellipse173"
+     style="fill:#ff0000;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="496.45389"
+     cx="803.9007" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path175"
+     d="m 801.3963,494.2598 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text177"
+     y="502.3465"
+     x="832.9787"
+     textLength="90.7801"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermique</text>
+  <line
+     id="line179"
+     y2="519.14893"
+     y1="519.14893"
+     x2="978.01422"
+     x1="738.29791"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text181"
+     y="539.3056"
+     x="745.39008"
+     textLength="222.695"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">rayonnement ou convection</text>
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text183"
+     y="557.46832"
+     x="745.39008"
+     textLength="225.5319"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">front de fusion/solidification</text>
+  <rect
+     id="rect185"
+     y="482.9787"
+     x="317.7305"
+     width="368.79431"
+     style="fill:#fefece;stroke:#a80036;stroke-width:2.12765956;filter:url(#f1)"
+     height="74.900299" />
+  <ellipse
+     sodipodi:ry="15.6028"
+     sodipodi:rx="15.6028"
+     sodipodi:cy="505.6738"
+     sodipodi:cx="430.14182"
+     id="ellipse187"
+     style="fill:#ffd700;stroke:#a80036;stroke-width:1.41843975"
+     ry="15.6028"
+     rx="15.6028"
+     cy="505.6738"
+     cx="430.14182" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path189"
+     d="m 427.6374,503.4796 3.9007,0 0,4.3218 -3.9007,0 0,-4.3218 z" />
+  <text
+     style="font-size:17.02129936px;fill:#000000;font-family:sans-serif"
+     id="text191"
+     y="511.56641"
+     x="459.21991"
+     textLength="120.5674"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="17.0213">thermochimie</text>
+  <line
+     id="line193"
+     y2="528.36877"
+     y1="528.36877"
+     x2="685.10638"
+     x1="319.1489"
+     style="stroke:#a80036;stroke-width:2.12765956" />
+  <text
+     style="font-size:15.60280037px;fill:#000000;font-family:sans-serif"
+     id="text195"
+     y="548.52551"
+     x="326.24109"
+     textLength="351.773"
+     lengthAdjust="spacingAndGlyphs"
+     font-size="15.6028">transferts de masse associés à l'oxydation</text>
+  <path
+     inkscape:connector-curvature="0"
+     id="path197"
+     style="fill:none;stroke:#a80036;stroke-width:1.41843975;stroke-dasharray:7, 7"
+     d="m 1268.5872,699.2908 c -16.7021,0 -33.4042,0 -50.1063,0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path199"
+     style="fill:none;stroke:#a80036;stroke-width:1.41843975;stroke-dasharray:7, 7"
+     d="m 371.8227,699.2908 c 16.3759,0 32.7518,0 49.1277,0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path201"
+     style="fill:none;stroke:#a80036;stroke-width:1.41843975;stroke-dasharray:7, 7"
+     d="m 557.6468,699.2908 c 16.3348,0 32.6695,0 49.0043,0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path203"
+     style="fill:none;stroke:#a80036;stroke-width:1.59994954;stroke-dasharray:4.79984862,4.79984862;stroke-miterlimit:4;stroke-dashoffset:0"
+     d="m 1103.2218,139.55241 c 21.0984,14.05644 41.8872,32.18296 58.6982,55.37728 92.2997,127.34575 141.7026,349.28608 160.0059,447.82276" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path207"
+     style="fill:none;stroke:#a80036;stroke-width:1.41843975;stroke-dasharray:7, 7"
+     d="m 794.3064,146.0993 c -16.7248,0 -33.4482,0 -50.1716,0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path209"
+     style="fill:none;stroke:#a80036;stroke-width:1.41843975;stroke-dasharray:7, 7"
+     d="m 683.0837,333.3333 c 16.3986,0 32.7957,0 49.1943,0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path217"
+     style="fill:none;stroke:#a80036;stroke-width:1.41843975;stroke-dasharray:7, 7"
+     d="m 687.095,520.5674 c 16.4823,0 32.966,0 49.4483,0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path223"
+     style="fill:none;stroke:#a80036;stroke-width:1.59994954;stroke-miterlimit:4;stroke-dasharray:6.39979816,3.19989908;stroke-dashoffset:0"
+     d="M 257.55623,328.51632 C 198.01385,344.40212 146.81038,361.8848 126.61696,378.67636 42.060653,448.9906 42.442743,562.17039 49.630573,621.36378" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path223-3"
+     style="fill:none;stroke:#a80036;stroke-width:1.59994954;stroke-miterlimit:4;stroke-dasharray:6.39979816,3.19989908;stroke-dashoffset:0"
+     d="m 255.24144,517.96456 c -58.96921,5.64565 -109.67981,11.8588 -129.67884,17.82634 -83.742354,24.98893 -83.363942,65.21181 -76.245303,86.24851" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path203-5"
+     style="fill:none;stroke:#a80036;stroke-width:1.59994954;stroke-miterlimit:4;stroke-dasharray:4.79984862,4.79984862;stroke-dashoffset:0"
+     d="m 1102.2556,334.10866 c 21.1325,8.62135 41.9549,19.73904 58.7931,33.965 92.4487,78.10602 141.9314,214.23051 160.2642,274.66683" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path203-5-3"
+     style="fill:none;stroke:#a80036;stroke-width:1.59994954;stroke-miterlimit:4;stroke-dasharray:4.79984862,4.79984862;stroke-dashoffset:0"
+     d="m 991.65057,525.42738 c 31.55843,3.30152 62.65373,7.55899 87.79923,13.0068 138.0591,29.91047 211.9545,82.03895 239.3319,105.18286" />
+</svg>
