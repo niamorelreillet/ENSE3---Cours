@@ -148,7 +148,7 @@ Trois notebooks accompagnent ce TD :
  \item \texttt{TD.ipynb}, le TD complété \dots à n'ouvrir qu'à la fin bien sûr !
 \end{itemize}
 
-\section{Configuration, hypothèses, notations} \label{sect:sci}
+\section*{Configuration, hypothèses, notations} \label{sect:sci}
 
 La \Fig{2layer} présente la configuration considérée avec les notations associées vis-à-vis des flux de chaleur et des températures d'interface. Le fond de la cuve est hémisphérique de rayon $R=2$m. 
 
@@ -166,6 +166,7 @@ Les hypothèses simplificatrices suivantes seront faites vis-à-vis de la croût
  \item la puissance volumique associée est considérée nulle;
  \item la conduction est considérée comme unidimensionnelle ``plan''.
 \end{itemize}
+On considèrera aussi que la conduction dans la paroi de la cuve est unidimensionnelle ``plan''.
 
 Ecrivez-le bilan thermique des deux couches liquides en stationnaire. 
 
@@ -208,14 +209,43 @@ On cherche à calculer la température moyenne et la distribution de puissance e
 \Q{Calculer le nombre de Nusselt associé à l'échange supérieur \(Nu^{ox}_{up}\) à partir de la corrélation ``BALI haut'' (\textit{cf.} \cite{Bonnet1999}) \(Nu^{ox}_{up}=0.381\left(Ra_i^{ox}\right)^{0.234}\)}
 \Q{Calculer \(T^{ox}\)}
 \Q{Calculer \(\phi_{lat}^{ox}\) et \(\phi_{up}^{ox}\) ainsi que la répartition de la puissance}
-\Q{A partir de \(\phi_{lat}^{ox}\), évaluer le maximum local de flux et le comparer à la valeur (pessimiste) de 1.5MW.m$^2$ du flux critique associé au refroidissement externe}
+
+On considère maintenant que le flux latéral ``local'' \(\varphi_{lat}^{ox}(z)\) s'écrit \(\varphi_{lat}^{ox}(z) = \phi_{lat}^{ox} f(z)\) avec la fonction de forme $f(z)$ donnée par $\forall z \in [0,H^{ox}]$ :
+\begin{equation}
+ f(z)=0.25-0.75 \times c \times \cos^3(\theta)
+\end{equation}
+avec $\displaystyle \theta=\sin^{-1}\left(1-\frac{z}{R} \right)$, $\displaystyle \theta^{ox}=\sin^{-1}\left(1-\frac{H^{ox}}{R} \right)$ et $\displaystyle c = \frac{8\left(1-\sin\theta^{ox}\right)}{3\left(\frac{\pi}{2} - \theta^{ox}\right)-3\sin\theta^{ox}\cos\theta^{ox} - 2\sin\theta^{ox}\cos^3\theta^{ox}}$.
+
+Plot the lateral flux profile $\varphi_{lat}^{ox}(z) = \phi_{lat}^{ox} f(z)$ along the vessel wall (considering the following shape function $f(z)$) and compare it for $z=H^{ox}$ to the pessimistic value of 1.5MW.m$^{-2}$ for the critical heaf flux associated with the external cooling of the vessel wall
+
+\Q{Tracer $\varphi_{lat}^{ox}(z)$ pour $z \in [0,H^{ox}]$ et comparer le maximum local de flux avec la valeur (pessimiste) de 1.5MW.m$^2$ du flux critique associé au refroidissement externe}
+
+
+\section{Croûte réfractaire et ablation de la paroi cuve}
+
+Pour une cote $z \in [0,H^{ox}]$ donnée, on considèrera que le flux ``local'' $\varphi_{lat}^{ox}(z)$ est dissipé par conduction unidimensionnelle ``plan'' dans l'épaisseur $e_c(z)$ de la croûte réfractaire et l'épaisseur $e_v(z)$ de la paroi de la cuve (\textit{cf.} \Fig{cv}). 
+
+On considèrera que la conductivité de la croûte $\lambda_c$ est la même que celle de la phase oxyde liquide tandis que, pour l'acier de la cuve, on prendra une conductivité $\lambda_v=40$W.m$^{-1}$.K$^{-1}$. Par ailleurs, la température de fusion de ce même acier sera prise égale à 1650K. Par ailleurs, l'épaisseur nominale de la paroi de la cuve est de 0.2$m$. 
+
+\Q{En écrivant l'expression du flux conductif stationnaire dans l'épaisseur de la cuve, calculez la température $T_{c/v}$ d'interface entre la croûte et la cuve}
+
+\Q{Quelle est la valeur maximale que peut atteindre $T_{c/v}$? En déduire l'épaisseur résiduelle $e_v(z)$ et la tracer selon $z$} (on ``ignorera'' l'acier fondu de la paroi de la cuve en considérant qu'il s'est relocalisé dans la couche métallique)
+
+\Q{En écrivant l'expression du flux conductif stationnaire dans l'épaisseur de la croûte, calculez et tracez $e_c(z)$}
+
+
+\begin{figure}[H]
+\centering \includegraphics[width=0.5\textwidth]{Figures/crust_vessel.eps}
+  \caption{Vue schématique de la conduction unidimensionnelle dans l'épaisseur de la croûte et la cuve pour une cote $z \in [0,H^{ox}]$ donnée} \label{fig:cv}
+\end{figure}
+
 
 \section{Couche métallique supérieure}
 
 La couche métallique occupe une hauteur $H^{met}=0.9$m dans le fond de la cuve.
 
 \Q{Calculer le nombre de Prandtl \(Pr^{met}\)}
-\Q{Donner l'expression du nombre de Rayliegh externe \(Ra^{met}\left[\Delta T\right]\) et l'évaluer pour \(\Delta T=100\)K. Doit-on s'attendre à un écoulement laminaire ou turbulent?}
+\Q{Donner l'expression du nombre de Rayleigh externe \(Ra^{met}\left[\Delta T\right]\) et l'évaluer pour \(\Delta T=100\)K. Doit-on s'attendre à un écoulement laminaire ou turbulent?}
 \Q{Calculer le volume \(V^{met}\), la surface latérale \(S_{lat}^{met}\) et la surface supérieure \(S_{up}^{met}\)}
 
 On considèrera la corrélation de Globe\&Dropkin \cite{Globe1959} établie pour l'échange axial d’un liquide chauffé par le dessous et confinés entre deux plaques (resp. Chawla\&Chan \cite{Chawla1982} établie pour l'échange d’une paroi verticale immergée dans un fluide) pour le transfert en surface supérieure (resp. latérale):
