@@ -152,7 +152,7 @@ Ces notebooks peuvent être manipulés en ligne à l'adresse suivante : \\ \href
 La session ouverte par ce biais n'a qu'une durée de vie limitée mais, heureusement, il est possible de sauver \includegraphics[height=12pt]{Figures/binder_save.png} et restaurer \includegraphics[height=12pt]{Figures/binder_restore.png} les modifications faites au travers du stockage du navigateur web. Voir \href{https://discourse.jupyter.org/t/getting-your-notebook-after-your-binder-has-stopped/3268}{\color{blue}{\underline{\T{https://discourse.jupyter.org/t/getting-your-notebook-after-your-binder-has-stopped/3268}}}}. Il est conseillé d'utiliser Firefox ou Chrome comme navigateur web pour garantir la fonctionnement de cette fonctionnalité.
 
 \begin{remark}
-Bien sûr, si vous installez Jupyterlab sur votre ordinateur (par le biais d'Anaconda par exemple ; voir \href{https://test-jupyter.readthedocs.io/en/latest/install.html}{\color{blue}{\underline{\T{https://test-jupyter.readthedocs.io/en/latest/install.html}}}}), vous pouvez travailler localementx²
+Bien sûr, si vous installez Jupyterlab sur votre ordinateur (par le biais d'Anaconda par exemple ; voir \href{https://test-jupyter.readthedocs.io/en/latest/install.html}{\color{blue}{\underline{\T{https://test-jupyter.readthedocs.io/en/latest/install.html}}}}), vous pouvez travailler localement
 \end{remark}
 
 Un troisième notebook (\T{TD.ipynb}), le TD complété, vous sera ``distribué'' à la fin.
@@ -232,15 +232,15 @@ Plot the lateral flux profile $\varphi_{lat}^{ox}(z) = \phi_{lat}^{ox} f(z)$ alo
 
 \section{Croûte réfractaire et ablation de la paroi cuve}
 
-Pour une cote $z \in [0,H^{ox}]$ donnée, on considèrera que le flux ``local'' $\varphi_{lat}^{ox}(z)$ est dissipé par conduction unidimensionnelle ``plan'' dans l'épaisseur $e_c(z)$ de la croûte réfractaire et l'épaisseur $e_v(z)$ de la paroi de la cuve (\textit{cf.} \Fig{cv}). 
+Pour une cote $z \in [0,H^{ox}]$ donnée, on considèrera que le flux ``local'' $\varphi_{lat}^{ox}(z)$ est dissipé par conduction unidimensionnelle ``plan'' dans l'épaisseur $e_c(z)$ de la croûte réfractaire et l'épaisseur $e_v(z)$ de la paroi de la cuve (\textit{cf.} \Fig{cv}). La paroi externe refroidie de la cuve sera supposée à une température constante $T_{lat}^{BC}=450$K.
 
 On considèrera que la conductivité de la croûte $\lambda_c$ est la même que celle de la phase oxyde liquide tandis que, pour l'acier de la cuve, on prendra une conductivité $\lambda_v=40$W.m$^{-1}$.K$^{-1}$. Par ailleurs, la température de fusion de ce même acier sera prise égale à 1650K. Par ailleurs, l'épaisseur nominale de la paroi de la cuve est de 0.2$m$. 
 
-\Q{En écrivant l'expression du flux conductif stationnaire dans l'épaisseur de la cuve, calculez la température $T_{c/v}$ d'interface entre la croûte et la cuve}
+\Q{En écrivant l'expression du flux conductif stationnaire dans l'épaisseur de la cuve, calculer la température $T_{c/v}$ d'interface entre la croûte et la cuve}
 
 \Q{Quelle est la valeur maximale que peut atteindre $T_{c/v}$? En déduire l'épaisseur résiduelle $e_v(z)$ et la tracer selon $z$} (on ``ignorera'' l'acier fondu de la paroi de la cuve en considérant qu'il s'est relocalisé dans la couche métallique)
 
-\Q{En écrivant l'expression du flux conductif stationnaire dans l'épaisseur de la croûte, calculez et tracez $e_c(z)$}
+\Q{En écrivant l'expression du flux conductif stationnaire dans l'épaisseur de la croûte, calculer et tracer $e_c(z)$}
 
 
 \begin{figure}[H]
