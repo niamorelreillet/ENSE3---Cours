@@ -46,6 +46,7 @@
 \newenvironment{legend}%
 {\tabular{r>{\small} l}}%
 {\endtabular}
+\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{cancel}
 \usepackage{tikzsymbols}
@@ -54,6 +55,8 @@
 \usepackage{animate}
 \usepackage{multimedia}
 \usepackage{fourier-orns}
+
+\newcommand{\T}{\texttt}
 
 \newcommand{\grad}[1]{\nabla #1}
 \renewcommand{\div}[1]{\nabla \cdot #1}
@@ -134,7 +137,13 @@
     \end{column}
 \end{columns}
 \vskip \baselineskip
-\textit{cf.} description TD et notebooks Jupyter \\ {\scriptsize (\href{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab})}
+\begin{itemize}
+ \item description : \href[pdfnewwindow=true]{{./TD/TD_description}.pdf}{\color{blue}{\underline{\T{./TD/TD\_description.pdf}}}} 
+ \item notebooks Jupyter (``cahiers électroniques'' en python 3 manipulables dans un navigateur web) : 
+\end{itemize}
+\begin{scriptsize}
+\vskip - \baselineskip \href[pdfnewwindow=true]{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}{\color{blue}{\underline{\T{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}}}}
+\end{scriptsize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

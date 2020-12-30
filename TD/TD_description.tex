@@ -125,7 +125,7 @@
 \begin{abstract}[french]
 %   Resum\'e en fran\c{c}ais
 Dans ce TD, on se propose d'évaluer, à partir des hypothèses et fermetures classiquement utilisées dans les codes de calculs, la répartition de la puissance et du flux de chaleur aux interfaces d'un bain de corium dans une configuration stationnaire à deux couches: une phase oxyde qui porte toute la puissance résiduelle en-dessous d'une phase métallique. La phase oxyde est entourée d'une croûte réfractaire tandis que la phase métallique est en contact direct avec la paroi de la cuve en fusion. Il s'agit d'une adaptation de la configuration évaluée pour le réacteur AP1000 \cite{Esmaili2004} et reprise dans la série de benchmarks de \cite{Carenini2019}.
-Pour faciliter la réalisation de ce TD (en particulier, les questions des \Sects{rad}{param} qui ne peuvent pas être traitées analytiquement), il est accompagné de notebooks Jupyter (voir \href{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}).
+Pour faciliter la réalisation de ce TD (en particulier, les questions des \Sects{rad}{param} qui ne peuvent pas être traitées analytiquement), il est accompagné de notebooks Jupyter manipulable en ligne : \href[pdfnewwindow=true]{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}{\color{blue}{\underline{\T{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}}}}.
 \end{abstract}
 % \selectlanguage{english}
 % \begin{abstract}
@@ -139,14 +139,23 @@ Pour faciliter la réalisation de ce TD (en particulier, les questions des \Sect
 
 \section*{Préambule sur Jupyterlab}
 
-Les notebooks Jupyter sont des cahiers électroniques qui, dans le même document, peuvent rassembler du texte, des images, des formules mathématiques et du code informatique exécutable (en l'occurence du python 3). Ils sont manipulables interactivement dans un navigateur web (voir, par exemple, \href{https://python.sdv.univ-paris-diderot.fr/18\_jupyter}{https://python.sdv.univ-paris-diderot.fr/18\_jupyter}). 
+Les notebooks Jupyter sont des cahiers électroniques qui, dans le même document, peuvent rassembler du texte, des images, des formules mathématiques et du code informatique exécutable (en l'occurence du python 3). Ils sont manipulables interactivement dans un navigateur web (voir, par exemple, \href{https://python.sdv.univ-paris-diderot.fr/18\_jupyter}{\color{blue}{\underline{\T{https://python.sdv.univ-paris-diderot.fr/18\_jupyter}}}}). 
 
-Trois notebooks accompagnent ce TD :
+Deux notebooks accompagnent ce TD :
 \begin{itemize}
- \item \texttt{Very\_short\_python\_tutorial.ipynb}, un très court tutoriel qui montre les quelques fonctionnalités python nécessaires à la réalisation de ce TD ;
- \item \texttt{TD\_template.ipynb}, le ``canevas'' du TD à remplir en suivant les questions de l'énoncé ci-dessous;
- \item \texttt{TD.ipynb}, le TD complété \dots à n'ouvrir qu'à la fin bien sûr !
+ \item \T{Very\_short\_python\_tutorial.ipynb}, un très court tutoriel qui montre les quelques fonctionnalités python nécessaires à la réalisation de ce TD ;
+ \item \T{TD\_template.ipynb}, le ``canevas'' du TD à remplir en suivant les questions de l'énoncé ci-dessous ;
 \end{itemize}
+
+Ces notebooks peuvent être manipulés en ligne à l'adresse suivante : \\ \href[pdfnewwindow=true]{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}{\color{blue}{\underline{\T{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}}}}. 
+
+La session ouverte par ce biais n'a qu'une durée de vie limitée mais, heureusement, il est possible de sauver \includegraphics[height=12pt]{Figures/binder_save.png} et restaurer \includegraphics[height=12pt]{Figures/binder_restore.png} les modifications faites au travers du stockage du navigateur web. Voir \href{https://discourse.jupyter.org/t/getting-your-notebook-after-your-binder-has-stopped/3268}{\color{blue}{\underline{\T{https://discourse.jupyter.org/t/getting-your-notebook-after-your-binder-has-stopped/3268}}}}. Il est conseillé d'utiliser Firefox ou Chrome comme navigateur web pour garantir la fonctionnement de cette fonctionnalité.
+
+\begin{remark}
+Bien sûr, si vous installez Jupyterlab sur votre ordinateur (par le biais d'Anaconda par exemple ; voir \href{https://test-jupyter.readthedocs.io/en/latest/install.html}{\color{blue}{\underline{\T{https://test-jupyter.readthedocs.io/en/latest/install.html}}}}), vous pouvez travailler localementx²
+\end{remark}
+
+Un troisième notebook (\T{TD.ipynb}), le TD complété, vous sera ``distribué'' à la fin.
 
 \section*{Configuration, hypothèses, notations} \label{sect:sci}
 
