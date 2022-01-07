@@ -12,6 +12,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
+\usepackage[labelsep=endash]{caption}
 
 \newcommand{\n}{\tabularnewline}
 \newcolumntype{C}{>{\centering}X}
@@ -113,12 +114,12 @@
 
 \title{TD: évaluation du bilan thermique intégral d'un bain de corium à deux couches}
 
-% \author[LMAG]{R.~Le Tellier\corref{contact}}
-% \ead{romain.le-tellier@cea.fr}
-% \cortext[contact]{contact:}
-% 
-% \address[LMAG]{CEA, DEN, DTN/SMTA/LMAG, Cadarache \\
-%   F-13108 Saint Paul-lez-Durance, France}
+\author[LMAG]{R.~Le Tellier\corref{contact}}
+\ead{romain.le-tellier@cea.fr}
+\cortext[contact]{contact:}
+
+\address[LMAG]{CEA, DES, IRESNE, DTN, Cadarache \\
+  F-13108 Saint Paul-lez-Durance, France}
   
 \begin{abstracts}
 \selectlanguage{french}
@@ -182,7 +183,7 @@ Ecrivez-le bilan thermique des deux couches liquides en stationnaire.
 \Q{A partir des hypothèses précédentes, que pouvez-vous dire de $\phi_{up}^{ox}$ et $\phi_{met}^{dwn}$? Que cela implique-t-il pour la résolution du bilan thermique de ce bain à deux couches?}
 
 \begin{figure}[H]
-  \centering \includegraphics[height=0.4\textheight]{../Figures/TD_2layer.eps}
+  \centering \includegraphics[height=0.4\textheight]{../Figures/{TD_2layer.eps}}
   \caption{Configuration à deux couches et notations des flux et températures} \label{fig:2layer}
 \end{figure}
 
@@ -286,8 +287,6 @@ La résolution ne peut plus se faire de manière analytique.
 \subsection{Etudes paramétriques} \label{sect:param}
 
 En considérant le cas avec transfert radiatif, on peut faire varier $\varepsilon_{up}$, $T^{BC}$ dans un premier temps, $H^{met}$ dans un second temps pour voir comment ça se comporte. Discuter de ces résultats vis-à-vis de la valeur (pessimiste) de 1.5MW.m$^2$ du flux critique associé au refroidissement externe.
-
-\section*{Références}
 
 \bibliography{../../References/lma-jabref.bib}
 
