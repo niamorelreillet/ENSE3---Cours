@@ -192,13 +192,13 @@ Ecrivez-le bilan thermique des deux couches liquides en stationnaire.
   \centering \begin{tabularx}{0.9\textwidth}{|l|R|R|R|} \hline
   \multicolumn{1}{|c|}{\multirow{2}{*}{Propriété}} & \multicolumn{1}{c|}{\multirow{2}{*}{Unité}} & \multicolumn{2}{c|}{Valeur} \n
   & & \multicolumn{1}{c|}{Oxyde} & \multicolumn{1}{c|}{Métal} \n \hline
-  masse volumique & kg.m$^{-3}$ & 8191 & 6899 \n
-  conductivité thermique & W.m$^{-1}$.K$^{-1}$ & 5.3 & 25 \n
-  viscosité cinématique & m$^2$s.$^{-1}$ & 5.7$\times$10$^{-7}$ & 5.9$\times$10$^{-7}$ \n
-  capacité calorifique massique & J.K$^{-1}$.kg$^{-1}$ & 533 & 789.5 \n
-  coefficient de dilatation thermique isobare & K$^{-1}$ & 1.05$\times$10$^{-4}$ & 1.11$\times$10$^{-4}$ \n
-  température de liquidus & K & 2950 & 1600 \n
-  puissance dissipée dans le volume & MW & 14 & 0 \n \hline
+  masse volumique & kg.m$^{-3}$ & 8000 & 7000 \n
+  conductivité thermique & W.m$^{-1}$.K$^{-1}$ & 5 & 25 \n
+  viscosité cinématique & m$^2$s.$^{-1}$ & 5$\times$10$^{-7}$ & 5$\times$10$^{-7}$ \n
+  capacité calorifique massique & J.K$^{-1}$.kg$^{-1}$ & 500 & 800 \n
+  coefficient de dilatation thermique isobare & K$^{-1}$ & 10$^{-4}$ & 10$^{-4}$ \n
+  température de liquidus & K & 2900 & 1700 \n
+  puissance dissipée dans le volume & MW & 15 & 0 \n \hline
   \end{tabularx}
 \end{table}
 
@@ -231,9 +231,9 @@ avec $\displaystyle \theta=\sin^{-1}\left(1-\frac{z}{R} \right)$, $\displaystyle
 
 \section{Croûte réfractaire et ablation de la paroi cuve}
 
-Pour une cote $z \in [0,H^{ox}]$ donnée, on considèrera que le flux ``local'' $\varphi_{lat}^{ox}(z)$ est dissipé par conduction unidimensionnelle ``plan'' dans l'épaisseur $e_c(z)$ de la croûte réfractaire et l'épaisseur $e_v(z)$ de la paroi de la cuve (\textit{cf.} \Fig{cv}). La paroi externe refroidie de la cuve sera supposée à une température constante $T_{lat}^{BC}=450$K.
+Pour une cote $z \in [0,H^{ox}]$ donnée, on considèrera que le flux ``local'' $\varphi_{lat}^{ox}(z)$ est dissipé par conduction unidimensionnelle ``plan'' dans l'épaisseur $e_c(z)$ de la croûte réfractaire et l'épaisseur $e_v(z)$ de la paroi de la cuve (\textit{cf.} \Fig{cv}). La paroi externe refroidie de la cuve sera supposée à une température constante $T_{lat}^{BC}=500$K.
 
-On considèrera que la conductivité de la croûte $\lambda_c$ est la même que celle de la phase oxyde liquide tandis que, pour l'acier de la cuve, on prendra une conductivité $\lambda_v=40$W.m$^{-1}$.K$^{-1}$. Par ailleurs, la température de fusion de ce même acier sera prise égale à 1650K. Par ailleurs, l'épaisseur nominale de la paroi de la cuve est de 0.2$m$. 
+On considèrera que la conductivité de la croûte $\lambda_c$ est la même que celle de la phase oxyde liquide tandis que, pour l'acier de la cuve, on prendra une conductivité $\lambda_v=40$W.m$^{-1}$.K$^{-1}$. Par ailleurs, la température de fusion de ce même acier sera prise égale à $1700$K. Par ailleurs, l'épaisseur nominale de la paroi de la cuve est de $0.2$m. 
 
 \Q{En écrivant l'expression du flux conductif stationnaire dans l'épaisseur de la cuve, calculer la température $T_{c/v}$ d'interface entre la croûte et la cuve}
 
@@ -250,7 +250,7 @@ On considèrera que la conductivité de la croûte $\lambda_c$ est la même que 
 
 \section{Couche métallique supérieure}
 
-La couche métallique occupe une hauteur $H^{met}=0.9$m dans le fond de la cuve.
+La couche métallique occupe une hauteur $H^{met}=0.5$m dans le fond de la cuve.
 
 \Q{Calculer le nombre de Prandtl \(Pr^{met}\)}
 \Q{Donner l'expression du nombre de Rayleigh externe \(Ra^{met}\left[\Delta T\right]\) et l'évaluer pour \(\Delta T=100\)K. Doit-on s'attendre à un écoulement laminaire ou turbulent?}
@@ -282,12 +282,12 @@ La résolution ne peut plus se faire de manière analytique.
 
 \begin{remark} Pour la suite, l'accès aux notebooks Jupyter associé à ce TD est indispensable. Si ça n'est pas possible, une démonstration d'une telle résolution numérique sera faite et les résultats discutés. \end{remark}
 
-\Q{En considérant $\varepsilon_{up} = 0.38$ et $T^{BC}=950$K, évaluer \(T^{met}\), \(T_{up}^{met}\), \(\phi_{lat}^{met}\) et \(\phi_{up}^{met}\)}
+\Q{En considérant $\varepsilon_{up} = 0.4$ et $T^{BC}=1000$K, évaluer \(T^{met}\), \(T_{up}^{met}\), \(\phi_{lat}^{met}\) et \(\phi_{up}^{met}\)}
 
 \subsection{Etudes paramétriques} \label{sect:param}
 
 En considérant le cas avec transfert radiatif, on peut faire varier $\varepsilon_{up}$, $T^{BC}$ dans un premier temps, $H^{met}$ dans un second temps pour voir comment ça se comporte. Discuter de ces résultats vis-à-vis de la valeur (pessimiste) de 1.5MW.m$^{-2}$ du flux critique associé au refroidissement externe.
 
-\bibliography{../../References/lma-jabref.bib}
+\bibliography{../../../References/lma-jabref.bib}
 
 \end{document}

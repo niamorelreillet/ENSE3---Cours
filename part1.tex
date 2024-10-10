@@ -2,14 +2,13 @@
 %%%%%%%%
 \section{Contexte}
 \subsection{Rappel du contexte général}
-\Titre{Rappel du contexte général (\textit{cf.} cours de P. Piluso)}
 \begin{frame}[fragile]
-\begin{itemize}
-  \item Dans le cadre de l'étude des \emph{``accidents graves''} des réacteurs à eau légère \\ $\rightarrow$ améliorer les moyens de prévention et mitigation associés
-  \item Accidents de \emph{fusion du c\oe ur} $\leftarrow$ perte de refroidissement, puissance résiduelle
+\frametitle{Rappel du contexte général (\textit{cf.} cours de P. Piluso)}
   \begin{columns}[T]
-  \begin{column}{0.7\textwidth}
+  \begin{column}{0.75\textwidth}
     \begin{itemize}
+      \item Dans le cadre de l'étude des \emph{``accidents graves''} des réacteurs à eau légère \\ $\rightarrow$ améliorer les moyens de prévention et mitigation associés
+      \item Accidents de \emph{fusion du c\oe ur} $\leftarrow$ perte de refroidissement, puissance résiduelle
       \item \emph{dégradation du c\oe ur} : oxydation exothermique (gaines en Zy), fusion (acier, Zr), dissolution puis fusion (ZrO$_{2-x}$, UO$_2$) \\ $\rightarrow$ \emph{formation d'un bain de ``corium''}
       \item \emph{relocalisation dans le fond de la cuve} \\ $\rightarrow$ interaction corium-eau et risque d'explosion vapeur ; \emph{comportement du corium en fond de cuve}  et risque de perte d'intégrité de la cuve
       \item relocalisation dans le puits de cuve \\ $\rightarrow$ interaction corium-eau  et risque d'explosion vapeur ; étalement, interaction corium-béton et risque de percement du radier
@@ -19,6 +18,7 @@
     \includegraphics[width=\textwidth]{Figures/corium.png}
   \end{column}
   \end{columns}
+\begin{itemize}
   \item \emph{``Physique'' du corium} : ``mal connue'' 
   \begin{itemize}
     \item \emph{phénomènes} nombreux, pas forcément clairement identifiés ou \emph{``mal connus''} 
@@ -26,16 +26,17 @@
   \end{itemize}
 \end{itemize}
 \end{frame}
-\Titre{Dégradation en c\oe ur et progression de l'accident vers le fond de cuve (\textit{cf.} cours de P. Piluso)}
 \begin{frame}[fragile]
+\frametitle{Dégradation en c\oe ur et progression de l'accident vers le fond de cuve}
+\framesubtitle{(\textit{cf.} cours de P. Piluso)}
 \begin{center}
-\includegraphics[height=\textheight]{Figures/transition_PP.png}
+\includegraphics[height=0.85\textheight]{Figures/transition_PP.png}
 \end{center}
 \end{frame}
 \subsection{Ce cours: Stratégie de rétention en cuve}
-\Titre{Ce cours: stratégie de rétention en cuve}
 \begin{frame}[fragile]
-Rétention du corium en cuve ou ``In-Vessel Retention'' (IVR)
+\frametitle{Ce cours: stratégie de rétention en cuve}
+\framesubtitle{Rétention du corium en cuve ou ``In-Vessel Retention'' (IVR)}
 \begin{columns}
 \begin{column}{0.7\textwidth}
 \begin{itemize}
@@ -105,9 +106,9 @@ On se concentrera ici sur la question du \emph{comportement du corium en cuve}
 
 %%%%%%%%
 \section{Le corium en fond de cuve: version simple}
-\Intercalaire{Le corium en fond de cuve: version simple}
-\Titre{Le corium en fond de cuve: version simple}
+\transition[1]{Le corium en fond de cuve}{version simple}
 \begin{frame}[fragile]
+\frametitle{Le corium en fond de cuve: version simple}
 Evaluation \emph{stationnaire ``enveloppe''} des flux de chaleur transmis à la cuve
 \begin{itemize}
 \item approche ``historique'' utilisée en particulier dans la \emph{démonstration de sûreté} des réacteurs AP600 puis \emph{AP1000} \cite{Esmaili2004} 
@@ -131,8 +132,8 @@ Evaluation \emph{stationnaire ``enveloppe''} des flux de chaleur transmis à la 
 \end{itemize}
 
 \end{frame}
-\Titre{Corium en cuve et écoulements en convection naturelle}
 \begin{frame}[fragile]
+\frametitle{Corium en cuve et écoulements en convection naturelle}
 Deux configurations d'\emph{écoulements en convection naturelle} :
 \begin{columns}[T]
     \begin{column}{0.3\textwidth}
@@ -168,12 +169,12 @@ Deux configurations d'\emph{écoulements en convection naturelle} :
 
 %%%%%%%%
 \subsection{Thermohydraulique de la couche métallique supérieure}
-\Titre{Thermohydraulique de la couche métallique supérieure}
 \begin{frame}[fragile]
+\frametitle{Thermohydraulique de la couche métallique supérieure}
 \begin{columns}[T]
     \begin{column}{0.3\textwidth}
-\vskip -\baselineskip
-\centering \includegraphics[height=0.4\textheight]{Figures/TD_2layer_metal.eps}
+\vskip -0.5\baselineskip
+\centering \includegraphics[height=0.35\textheight]{Figures/TD_2layer_metal.eps}
     \end{column}
     \begin{column}{0.7\textwidth}  
     \begin{scriptsize}
@@ -240,11 +241,11 @@ Deux configurations d'\emph{écoulements en convection naturelle} :
 \end{itemize}
 \end{frame}
 \subsubsection{Conditions thermiques en limites axiales : instabilité de Rayleigh-Bénard}
-\Titre{Couche métallique supérieure - instabilité de Rayleigh-Bénard}
 \begin{frame}[fragile]
+\frametitle{Couche métallique supérieure - instabilité de Rayleigh-Bénard}
 \begin{itemize}
 \item Ecoulement \emph{conditionnellement instable} $Ra>Ra_c$ et transition \emph{laminaire - turbulent} (``douce'' puis ``dure'' puis ``asymptotique'')
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{0.8\textwidth}
 \begin{tabular}{cc}
 \tiny{(Figures tirées de \cite{Gauthier2008})} & \multirow{2}{*}{\includegraphics[width=0.5\textwidth]{Figures/Fig1_3_Gauthier2008.png}} \\
 \includegraphics[width=0.5\textwidth]{Figures/Fig1_1_Gauthier2008.png} & \\
@@ -263,12 +264,12 @@ Deux configurations d'\emph{écoulements en convection naturelle} :
 \scriptsize $\rightarrow$ Un v\oe u exaucé ! Toujours \emph{un sujet ``intense'' de recherche} (simulation numérique et expérience)
 \end{frame}
 \subsubsection{Conditions thermiques en limite latérale : refroidissement}
-\Titre{Couche métallique supérieure - refroidissement latéral}
 \begin{frame}[fragile]
+\frametitle{Couche métallique supérieure - refroidissement latéral}
 \begin{itemize}
 \item Ecoulement \emph{inconditionnellement instable} \begin{minipage}{0.05\textwidth}\includegraphics[width=\textwidth]{Figures/vertical_plate.eps} \end{minipage}
 \item \emph{Impact sur le profil de température} pour $Pr$ faible {\tiny (Figure tirée de \cite{Tran2013})} \\
-\begin{center} \vskip -\baselineskip ~ \\ \includegraphics[width=0.4\textwidth]{Figures/Fig3_Tran2013.png} \end{center}
+\begin{center} \vskip -\baselineskip ~ \\ \includegraphics[width=0.35\textwidth]{Figures/Fig3_Tran2013.png} \end{center}
 \item Malgré (à cause ?) de la complexité pour cette couche métallique, les \emph{modèles intégraux} ou ``grossièrement maillés'' ont recours à des \emph{corrélations} établies séparément pour des \emph{configurations ``unidimensionnelles''} $\rightarrow$ \textit{cf.} TD
 \item Avec des limites (et des perspectives) que nous aborderons en 2$^{\text{ème}}$ partie de cours
 \end{itemize}
@@ -277,11 +278,11 @@ Deux configurations d'\emph{écoulements en convection naturelle} :
 %%%%%%%%
 \subsection{Thermohydraulique du bain oxyde}
 \subsubsection{Solidification à l'interface}
-\Titre{Bain oxyde - solidification à l'interface}
 \begin{frame}[fragile]
+\frametitle{Bain oxyde - solidification à l'interface}
 \begin{columns}[T]
     \begin{column}{0.25\textwidth}
-\centering \includegraphics[height=0.3\textheight]{Figures/TD_2layer_crust.eps}
+\centering \includegraphics[height=0.25\textheight]{Figures/TD_2layer_crust.eps}
     \end{column}
     \begin{column}{0.75\textwidth}
 \begin{itemize}
@@ -290,7 +291,7 @@ Deux configurations d'\emph{écoulements en convection naturelle} :
     \end{itemize}
     \end{column}
 \end{columns}
-\begin{minipage}{0.8\textwidth}
+\begin{minipage}{0.7\textwidth}
 \begin{tabular}{cc}
 \tiny{Figures tirées de \cite{Quaini2015} (échantillon $O_{0.39}U_{0.103}Zr_{0.507}$}) & \multirow{2}{*}{\includegraphics[width=0.42\textwidth]{Figures/Fig18a_Quaini2015.png}} \\
 \includegraphics[width=0.5\textwidth]{Figures/Fig18b_Quaini2015.png} & \\
@@ -335,11 +336,11 @@ Deux configurations d'\emph{écoulements en convection naturelle} :
 \end{itemize}
 \end{frame}
 \subsubsection{Convection naturelle par chauffage volumique}
-\Titre{Bain oxyde - convection naturelle par chauffage volumique}
 \begin{frame}[fragile]
+\frametitle{Bain oxyde - convection naturelle par chauffage volumique}
 \begin{columns}[T]
     \begin{column}{0.25\textwidth}
-\centering \includegraphics[height=0.3\textheight]{Figures/TD_2layer_oxide.eps}
+\centering \includegraphics[height=0.25\textheight]{Figures/TD_2layer_oxide.eps}
     \end{column}
     \begin{column}{0.75\textwidth}
 \begin{itemize}
@@ -349,11 +350,12 @@ Deux configurations d'\emph{écoulements en convection naturelle} :
     \end{itemize}
     \end{column}
 \end{columns}
+\vskip \baselineskip
 \begin{itemize}
 \item Schéma de l'écoulement (Figure tirée de \cite{Bonnet1999})
 \begin{columns}[T]
     \begin{column}{0.6\textwidth}
-\centering \includegraphics[width=0.8\textwidth]{Figures/Fig2_Bonnet2001.png}
+\centering \includegraphics[width=0.7\textwidth]{Figures/Fig2_Bonnet2001.png}
     \end{column}
     \begin{column}{0.5\textwidth}
     \hskip -1cm \begin{minipage}{\textwidth}
@@ -430,7 +432,7 @@ Deux configurations d'\emph{écoulements en convection naturelle} :
 \item En plus du flux moyen sur la surface latérale, on s'intéresse aussi au \emph{profil de flux}
 \begin{columns}[T]
     \begin{column}{0.6\textwidth}
-\centering \includegraphics[width=1.0\textwidth]{Figures/phi_oxy_theta.eps}
+\centering \includegraphics[width=0.9\textwidth]{Figures/phi_oxy_theta.eps}
     \end{column}
     \begin{column}{0.4\textwidth}
     \begin{itemize}

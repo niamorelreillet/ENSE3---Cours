@@ -1,14 +1,6 @@
-\pdfminorversion=4
-\documentclass[usenames,dvipsnames]{beamer}
-%Pour impression des transparents sans animations
-%option trans (à préciser aussi dans les \only
-%\documentclass[trans]{beamer}
-%
-%Pour impression des transparents sur papier (pour les CRR)
-%\documentclass[handout]{beamer}
-%
+\documentclass[usenames,dvipsnames,aspectratio=169, 10pt]{beamer}
 
-\usetheme{cea2020}
+\usetheme{cea2023}
 
 \setbeamerfont{structure}{size=\small}
 \setbeamerfont{title page}{size=\Large,parent=structure}
@@ -32,7 +24,7 @@
 \setbeamerfont{caption}{size=\scriptsize, parent=structure}
 
 \setbeamertemplate{caption}{\centering\insertcaption\par}
-\renewcommand{\emph}[1]{\textcolor{cea8}{\textit{#1}}}
+\renewcommand{\emph}[1]{\textcolor{ceared}{\textit{#1}}}
 \bibliographystyle{apalike}
 
 
@@ -68,26 +60,33 @@
 %\usepackage[default,scale=0.85]{opensans} 
 %\usepackage{lmodern} 
 %
-\titre{\normalsize{Accidents graves des réacteurs nucléaires} \\ \Large{Comportement et rétention du corium en cuve d'un réacteur à eau légère}}
-\evenement{\large{Cycles nucléaires - filière ENSE3/IEN}}
-\auteurs{\textit{Romain Le Tellier} {\scriptsize (\href{mailto:romain.le-tellier@cea.fr}{\underline{romain.le-tellier@cea.fr}})}, Jules Delacroix, Pascal Piluso}
-\datedocument{Décembre 2022 / Janvier 2023}
-\institut{IRESNE}
-\institutnomlong{}
-\depservlab{DTN/SMTA/LMAG}
-\auteurprincipal{Romain Le Tellier}
 
+\title[Rétention du corium en cuve]  %optional
+{Accidents graves des réacteurs nucléaires}
+\subtitle{Comportement et rétention du corium en cuve d'un réacteur à eau légère}
+\date[Octobre 2024]  %optional
+{Cycles nucléaires - filière ENSE3/IEN, octobre 2024}
+\author[Romain Le Tellier]  %optionam
+{Romain Le Tellier \texttt{(\small romain.le-tellier\myat cea.fr)} \and Jules Delacroix \and Pascal Piluso}
+\institute[CEA IRESNE]  %optional
+{CEA, DES, IRESNE, DTN, Cadarache}
+% Change the logo 
+\titlegraphic{logos/IRESNE_redred.png}
+
+% use your thanks-message in the last frame
+\setvalue{\ThxMessage}{Merci pour votre attention \\~\\ Intéressés ? \\ Stages, thèses proposés ... \\ Ecrivez-moi !}
 %%
 \begin{document}
 
-%% TITLE PAGE %%
-\PageTitre{}
-%%
+%%%%%%%%
+\begin{frame}[decorated] %Decorated bring the logo and corner
+  \titlepage
+\end{frame}
 
 %%%%%%%%
 \section{Objectifs pédagogiques}
-\Titre{Objectifs pédagogiques}
 \begin{frame}[fragile]
+\frametitle{Objectifs pédagogiques}
 \begin{itemize}
 \item Connaître les \emph{phénomènes physiques} déterminant vis-à-vis du comportement du \emph{corium dans le fond de cuve} et l'évaluation du risque de percement de la cuve d'un réacteur à eau légère
 \item Faire le lien entre une partie de ces phénomènes (thermohydrauliques) et l'enseignement général en \emph{mécanique des fluides, thermohydraulique} dispensé à l'ENSE3
@@ -100,7 +99,6 @@
 %%%%%%%%
 %\setbeamertemplate{background canvas}[annexe]
 \section*{Sommaire}
-%\Titre{Sommaire}
 \begin{frame}[fragile]
 \frametitle{Sommaire}
   \linespread{0.9}
@@ -113,14 +111,14 @@
 \input{part1.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{TD : évaluation du bilan thermique intégral}
-\Intercalaire{TD : évaluation du bilan thermique intégral}
-\Titre{TD : évaluation du bilan thermique intégral}
+\section{TD : évaluation du bilan thermique intégral}
+\transition[2]{TD}{évaluation du bilan thermique intégral}
 \begin{frame}[fragile]
+\frametitle{TD : évaluation du bilan thermique intégral}
 \begin{columns}[T]
     \begin{column}{0.4\textwidth}
       \begin{figure}[H]
-\centering \includegraphics[height=0.4\textheight]{Figures/TD_2layer.eps}
+\centering \includegraphics[height=0.35\textheight]{Figures/TD_2layer.eps}
 \caption{Configuration à deux couches et notations des flux et températures}
       \end{figure}
     \end{column}
@@ -142,7 +140,7 @@
  \item notebooks Jupyter (``cahiers électroniques'' en python 3 manipulables dans un navigateur web) : 
 \end{itemize}
 \begin{scriptsize}
-\vskip - \baselineskip \href[pdfnewwindow=true]{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}{\color{blue}{\underline{\T{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}}}}
+\vskip - 0.5\baselineskip \href[pdfnewwindow=true]{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}{\color{blue}{\underline{\T{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}}}}
 \end{scriptsize}
 \end{frame}
 
@@ -151,8 +149,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{En guise de conclusion sur l'IVR}
-\Titre{En guise de conclusion sur l'IVR}
 \begin{frame}[fragile]
+\frametitle{En guise de conclusion sur l'IVR}
 \begin{itemize}
 \item L'\emph{IVR} est une \emph{stratégie ``séduisante'' de gestion d'un accident grave}
 \item Mais, en l'état des connaissances sur le comportement du corium en fond de cuve, une démonstration ``forte'' requiert :
@@ -164,23 +162,23 @@
 \item Ainsi, \emph{pour réacteurs de ``forte puissance'' avec IVR} (e.g. AP-1000, APR-1400, HPR-1000) : \\ \emph{R\&D (intéressante !) à poursuivre} / 
 \emph{échec de l'IVR à étudier} $\rightarrow$ corium hors de la cuve
 \end{itemize}
-\begin{ceaexample2block}{Au prochain cours (avec J. Delacroix)}
+\begin{exampleblock}{Au prochain cours (avec J. Delacroix)}
 Comportement du corium hors cuve \\ (échec de l'IVR ou stratégie \emph{``Ex-Vessel Retention''} - EVR)
 \begin{itemize}
   %\item Interaction Corium-Eau et \emph{risque d'explosion vapeur}
   \item \emph{Etalement du corium} (avec ou sans eau)
   \item \emph{Interaction Corium-Béton} (avec ou sans eau)
 \end{itemize}
-\end{ceaexample2block}
+\end{exampleblock}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\DernierePage{Merci pour votre attention \\~\\ Intéressés ? \\ Stages, thèses proposés ... \\ Ecrivez-moi !}
-\Annexes
+\closingframe
+
 \section*{Références}
-\Titre{Références}
 \begin{frame}[fragile,allowframebreaks]
-  \bibliography{../References/lma-jabref}
+\frametitle{Références}
+  \bibliography{../../References/lma-jabref}
 \end{frame}
 %%
 \end{document}

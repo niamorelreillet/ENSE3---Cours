@@ -1,17 +1,17 @@
 
 %%%%%%%%
 \section{Le corium en fond de cuve: est-ce si simple?}
-\Intercalaire{Le corium en fond de cuve: est-ce si simple?}
-\Titre{Le corium en fond de cuve: est-ce si simple?}
+\transition[3]{Le corium en fond de cuve}{est-ce si simple?}
 \begin{frame}[fragile]
-Pas tout à fait...
+\frametitle{Le corium en fond de cuve: est-ce si simple?}
+\framesubtitle{Pas tout à fait...}
 \begin{itemize}
 \item En premier lieu car \emph{$\left(U_y,Zr_{1-y}\right)O_{2-x}+\left(Fe, \dots\right) \ne$ système ``inerte''} \\
 $\rightarrow$ transfert de masse inter-couche et \emph{changement de stratification} en particulier
 \item Ainsi, une \emph{évaluation stationnaire} du comportement du corium en cuve \emph{ne suffit pas} ... \emph{ça se complique} \danger
 \vskip -0.5\baselineskip
 \begin{figure}[H]
-\centering \includegraphics[width=0.7\textwidth]{Figures/corium_en_cuve.pdf}
+\centering \includegraphics[width=0.65\textwidth]{Figures/corium_en_cuve.pdf}
 \vskip -\baselineskip
 \caption{\tiny Représentation schématique et partielle de la modélisation du bain de corium en cuve}
 \end{figure}
@@ -46,8 +46,8 @@ Mais avant de parler de ``thermochimie'', revenons d'abord au \emph{comportement
 \end{itemize}
 \end{frame}
 \subsubsection{Conditions thermiques en limite haute : transfert radiatif et température inhomogène}
-\Titre{Couche métallique supérieure - transfert radiatif en surface haute}
 \begin{frame}[fragile]
+\frametitle{Couche métallique supérieure - transfert radiatif en surface haute}
 \begin{itemize}
 \item Sans le dire, en assimilant le transfert de chaleur vers le haut à celui d'une cavité de Rayleigh-Bénard, on a considéré : \\
 \emph{condition inhomogène de transfert radiatif} $\Leftrightarrow$ condition uniforme $T_{up}^{met}$ imposée telle que $\phi_{up}^{BC}\left[T_{up}^{met}\right] = \phi_{up}^{met}\left[T^{met}-T_{up}^{met}\right]$ avec $\phi^{BC}_{up}\left[T^{met}_{up}\right]=\varepsilon_{up}\sigma\left(\left(T^{met}_{up}\right)^4-\left(T^{BC}\right)^4\right)$
@@ -60,13 +60,13 @@ Mais avant de parler de ``thermochimie'', revenons d'abord au \emph{comportement
 \begin{columns}[T]
     \begin{column}{0.7\textwidth}
 \begin{figure}[H]
-\centering \includegraphics[width=\textwidth]{Figures/Fig3_Peybernes2020.png} \\
+\centering \includegraphics[width=0.9\textwidth]{Figures/Fig3_Peybernes2020.png} \\
 {\tiny Domaine de calcul et conditions aux limites des calculs CFD}
 \end{figure}
     \end{column}
     \begin{column}{0.3\textwidth}
 \begin{figure}[H]
-\centering \includegraphics[width=\textwidth]{Figures/Fig5_Peybernes2020.png} \\
+\centering \includegraphics[width=0.9\textwidth]{Figures/Fig5_Peybernes2020.png} \\
 {\tiny Température pour $H^{met}=5cm$ (moyennée en temps en régime pseudo-stationnaire)}
 \end{figure}
     \end{column}
@@ -74,7 +74,6 @@ Mais avant de parler de ``thermochimie'', revenons d'abord au \emph{comportement
 \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
-\vskip -\baselineskip
 \begin{columns}[T]
     \begin{column}{0.5\textwidth}
 \begin{itemize}
@@ -90,7 +89,7 @@ Mais avant de parler de ``thermochimie'', revenons d'abord au \emph{comportement
     \begin{column}{0.5\textwidth}
 \vskip -0.8\baselineskip
 \begin{figure}[H]
-\centering \includegraphics[width=\textwidth]{Figures/Fig6_Peybernes2020.png} \\
+\centering \includegraphics[width=0.9\textwidth]{Figures/Fig6_Peybernes2020.png} \\
 \vskip -0.5\baselineskip
 {\tiny $\phi^{met}_{lat}/\phi^{met}_{dwn}$ dans le cas $\varepsilon_{up}=0.6$ et $T^{BC}=1658$K}
 \end{figure}
@@ -115,17 +114,17 @@ Mais avant de parler de ``thermochimie'', revenons d'abord au \emph{comportement
     \end{columns}
 \end{frame}
 \subsubsection{Conditions mécaniques en limite haute : Instabilité de Bénard-Marangoni}
-\Titre{Couche métallique supérieure - instabilité de Bénard-Marangoni}
 \begin{frame}[fragile]
+\frametitle{Couche métallique supérieure - instabilité de Bénard-Marangoni}
 \begin{itemize}
   \item Frontière supérieure (en l'absence d'oxydation) : une \emph{surface libre déformable}
   \item Si la \emph{tension de surface $\sigma=f(T)$}, un impact direct sur la thermohydraulique de la couche $\rightarrow$ \emph{effet Marangoni}
   \item Considérons à nouveau uniquement l'\emph{échange axial} (Rayleigh-Bénard) :
 \begin{columns}[T]
     \begin{column}{0.35\textwidth}
-    \vskip -\baselineskip
+    \vskip -0.5\baselineskip
 \begin{figure}[H]
-\centering \includegraphics[width=\textwidth]{Figures/RB_BM.eps} \\
+\centering \includegraphics[width=0.9\textwidth]{Figures/RB_BM.eps} \\
     \vskip -0.5\baselineskip
 {\tiny $\gamma > 0 \rightarrow$ la convection est renforcée}
 \end{figure}
@@ -155,13 +154,11 @@ avec $\left\{\begin{array}{rcl}
 \item \emph{Evaluation \textit{a priori} pour la couche métallique} (\textit{cf.} \cite{Saas2017})
 \begin{columns}[T]
     \begin{column}{0.4\textwidth}
-    \vskip -\baselineskip
 \begin{figure}[H]
-\centering \includegraphics[width=\textwidth]{Figures/Fig3_Saas2017.png} \\
+\centering \includegraphics[width=0.9\textwidth]{Figures/Fig3_Saas2017.png} \\
 \end{figure}
     \end{column}
     \begin{column}{0.6\textwidth}
-    \vskip -0.5\baselineskip
     \begin{itemize}
 \item pour $H=0.1$m, en considérant $\Delta T = 100$K et \emph{$\gamma>0$} (fer pur : $4\times 10^{-4}$N.m$^{-1}$.K$^{-1}$), \\
 $Ga\approx 2\times 10^{10}$, $Ra\approx 2\times 10^{7}$, $Ma\approx 5\times 10^{5}$, $Cr\approx 10^{-7}$
@@ -179,11 +176,10 @@ $Ga\approx 2\times 10^{10}$, $Ra\approx 2\times 10^{7}$, $Ma\approx 5\times 10^{
 \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
-
-{\footnotesize Quelques résultats extraits de cette étude \cite{Peybernes2019}}
+\begin{itemize}
+\item \emph{Quelques résultats} extraits de cette étude \cite{Peybernes2019}
 \begin{columns}[T]
     \begin{column}{0.6\textwidth}
-    \vskip -\baselineskip
 \begin{figure}[H]
 \centering 
 {\scriptsize $\varepsilon_{up}=0.8$ et $T^{BC}=400$K} \\
@@ -191,6 +187,7 @@ $Ga\approx 2\times 10^{10}$, $Ra\approx 2\times 10^{7}$, $Ma\approx 5\times 10^{
 \end{figure}
     \end{column}
     \begin{column}{0.4\textwidth}
+    \vskip \baselineskip
     \begin{itemize}
 \item $T_{(Ra+Ma<0)}>T_{(Ra)}>T_{(Ra+Ma>0)}$
 \item \emph{``Couplage'' fort et non-intuitif avec le refroidissement latéral}
@@ -201,7 +198,6 @@ $Ga\approx 2\times 10^{10}$, $Ra\approx 2\times 10^{7}$, $Ma\approx 5\times 10^{
 \multicolumn{2}{c}{\scriptsize Profil radial de la température de la surface haute ($\varepsilon_{up}=0.2$ et $T^{BC}=1658$K)} \\
 \includegraphics[width=0.35\textwidth]{Figures/Fig5_Peybernes2019.png} & \includegraphics[width=0.35\textwidth]{Figures/Fig6_Peybernes2019.png}
 \end{tabular}
-\begin{itemize}
 \item Loin de la surface latérale, convection ``stoppée'' pour $Ma<0$
 \item Près de la surface latérale, pour $H$ faible, $Ma\lessgtr 0 \rightarrow$ \emph{élargissement de la zone latérale de gradient thermique} $\rightarrow$ refroidissement par transfert radiatif réduit dans cette zone \\
 \emph{Aggravement du focusing effect mais large incertitude} (e.g. $Ma$ solutal, oxydation)
@@ -210,11 +206,11 @@ $Ga\approx 2\times 10^{10}$, $Ra\approx 2\times 10^{7}$, $Ma\approx 5\times 10^{
 
 %%%%%%%%
 \subsection{Corium en cuve et thermochimie}
-\Titre{Le corium en fond de cuve: est-ce si simple?}
 \begin{frame}[fragile]
+\frametitle{Le corium en fond de cuve: est-ce si simple?}
 Passons maintenant à la \emph{``thermochimie''} {\scriptsize $\left(U_y,Zr_{1-y}\right)O_{2-x}+\left(Fe, \dots\right) \ne$ système ``inerte''}
 \begin{figure}[H]
-\centering \includegraphics[width=0.75\textwidth]{Figures/corium_en_cuve.pdf}
+\centering \includegraphics[width=0.65\textwidth]{Figures/corium_en_cuve.pdf}
 \vskip -\baselineskip
 \caption{\scriptsize Représentation schématique et partielle de la modélisation du bain de corium en cuve}
 \end{figure}
@@ -226,23 +222,21 @@ Passons maintenant à la \emph{``thermochimie''} {\scriptsize $\left(U_y,Zr_{1-y
 \end{itemize}
 \end{frame}
 \subsection{Stratification des couches liquides}
-\Titre{Echanges de masse interfacial et stratification des couches liquides}
 \subsubsection{Equilibre thermodynamique de $\left(U_y,Zr_{1-y}\right)O_{2-x}+\left(Fe, \dots\right)$}
-\Titre{Equilibre thermodynamique de $\left(U_y,Zr_{1-y}\right)O_{2-x}+\left(Fe, \dots\right)$}
 \begin{frame}
-      \vskip -0.5\baselineskip
+\frametitle{Equilibre thermodynamique de $\left(U_y,Zr_{1-y}\right)O_{2-x}+\left(Fe, \dots\right)$}
       \begin{itemize}
 \item \emph{Lacune de miscibilité} $\rightarrow$ deux liquides à l'\emph{équilibre} ($T$ donnée) avec \emph{$\rho_{met}\lessgtr \rho_{oxy}$} suivant :
 \begin{columns}[T]
-  \begin{column}{0.45\textwidth}
+  \begin{column}{0.35\textwidth}
     \begin{tabularx}{\textwidth}{CCC}
-    \includegraphics[width=0.2\textwidth]{Figures/{schema_stratif_2_ini}.eps} & 
-    \includegraphics[width=0.2\textwidth]{Figures/{schema_stratif_2_hm}.eps} &
-    \includegraphics[width=0.2\textwidth]{Figures/{schema_stratif_2_lm}.eps} \n
+    \includegraphics[width=0.17\textwidth]{Figures/{schema_stratif_2_ini}.eps} & 
+    \includegraphics[width=0.17\textwidth]{Figures/{schema_stratif_2_hm}.eps} &
+    \includegraphics[width=0.17\textwidth]{Figures/{schema_stratif_2_lm}.eps} \n
     \tiny Etat initial & \tiny Métal ``lourd'' & \tiny Métal ``léger''
     \end{tabularx}
   \end{column}
-  \begin{column}{0.6\textwidth} 
+  \begin{column}{0.65\textwidth} 
   \begin{itemize}
     \item le degré d’oxydation du Zr ($C_n^0$) et du rapport molaire U/Zr ($R_{U/Zr}^0$) du corium oxyde initial
     \item le rapport entre les masses d'acier et de corium oxyde initialement mises en présence ($x_{steel}$)
@@ -251,7 +245,7 @@ Passons maintenant à la \emph{``thermochimie''} {\scriptsize $\left(U_y,Zr_{1-y
 \end{columns}
 \end{itemize}
 \begin{columns}[T]
-  \begin{column}{0.4\textwidth}
+  \begin{column}{0.35\textwidth}
   \begin{itemize}
     \item \emph{Expériences à ``petite échelle''}
     \item $\diameter \le 7$cm et $m_{oxy}$ $\sim$ 100g à 2kg
@@ -259,63 +253,58 @@ Passons maintenant à la \emph{``thermochimie''} {\scriptsize $\left(U_y,Zr_{1-y
   \end{itemize}
   \includegraphics[width=\textwidth]{Figures/rasplav3.png} 
   \end{column}
-  \begin{column}{0.6\textwidth} 
+  \begin{column}{0.65\textwidth} 
 \renewcommand{\arraystretch}{0.1}
 \centering {\tiny Densités des phases oxyde ($\rho_{oxy}$) et métal ($\rho_{met}$) calculées à l'équilibre}
 \begin{tabularx}{\textwidth}{>{\setlength{\baselineskip}{0.5\baselineskip}}C >{\setlength{\baselineskip}{0.5\baselineskip}}C}
-\includegraphics[width=0.48\textwidth]{Figures/densities_vs_x0met_MA3_2840K_new.png} & \includegraphics[width=0.48\textwidth]{Figures/densities_vs_Cn_MA9_2855K_new.png} \n
+\includegraphics[width=0.42\textwidth]{Figures/densities_vs_x0met_MA3_2840K_new.png} & \includegraphics[width=0.42\textwidth]{Figures/densities_vs_Cn_MA9_2855K_new.png} \n
 {\tiny En fonction de $x_{steel}$ pour ($\bar{T}=2840$K, $C_n^0=36.5\%$ et $R_{U/Zr}^0=1.14$) $\rightarrow$ MASCA-MA-3} & {\tiny En fonction de $C_n^0$ pour ($\bar{T}=2855$K, $x_{steel}=0.1$ et $R_{U/Zr}^0=1.17$) $\rightarrow$ MASCA-MA-9}
 \end{tabularx}
 \renewcommand{\arraystretch}{1.0}
       \vskip -0.5\baselineskip
 \begin{itemize}
-\item Représentation thermodynamique : méthode CALPHAD $\rightarrow$ Energie de Gibbs des phases $\wp$
+\item Représentation thermodynamique : méthode CALPHAD \\ $\rightarrow$ Energie de Gibbs des phases $\wp$
 \item Lois de densité $\rho_{\wp}\left(\text{composition}\right)$
 \end{itemize}
   \end{column}
 \end{columns}
 \end{frame}
 \subsubsection{Cinétique de stratification : échange interfacial et instabilité de Rayleigh-Taylor}
-\Titre{Cinétique de stratification}
-    \begin{frame}
-      \vskip -\baselineskip
+\begin{frame}
+\frametitle{Cinétique de stratification}
 \begin{columns}[T]
-  \begin{column}{0.5\textwidth}
+  \begin{column}{0.3\textwidth}
     \begin{tabularx}{\textwidth}{CC}
-    \includegraphics[height=0.25\textheight]{Figures/{schema_stratif_2_ini}.eps} &
-    \includegraphics[height=0.30\textheight]{Figures/{schema_stratif_3}.eps} \n
+    \includegraphics[height=0.23\textheight]{Figures/{schema_stratif_2_ini}.eps} &
+    \includegraphics[height=0.28\textheight]{Figures/{schema_stratif_3}.eps} \n
     \tiny Etat ``initial'' (deux couches) & \tiny Etat transitoire (trois couches)
     \end{tabularx}
   \end{column}
-  \begin{column}{0.55\textwidth} 
-    \hskip -0.7cm \begin{minipage}{1.1\textwidth}
+  \begin{column}{0.7\textwidth} 
   \begin{itemize}
-\item Transitoire AG en fond de cuve \\ $\rightarrow$ \emph{apport progressif d'acier fondu}
+\item Transitoire AG en fond de cuve $\rightarrow$ \emph{apport progressif d'acier fondu}
 \item \emph{Deux transitoires de stratification} associés à ces équilibres à deux couches potentiels :
 \begin{itemize}
-\item[\textcolor{OliveGreen}{(1)}] formation de la couche métallique lourde \\
+\item[\textcolor{OliveGreen}{(1)}] formation de la couche métallique lourde
 \emph{$\rightarrow$ Aggravement du risque de focusing effect}
-\item[\textcolor{blue}{(2)}] retour à une stratification ``normale'' \\
+\item[\textcolor{blue}{(2)}] retour à une stratification ``normale''
 \emph{$\rightarrow$ Remontée de métal ``surchauffé''}
 \end{itemize}
   \end{itemize}
-\end{minipage}
   \end{column}
 \end{columns}
       \begin{itemize}
       \item Ce que l'on peut dire \textit{a priori} des \emph{phénomènes mis en jeu} :
       \begin{itemize}
-      \item \emph{transfert de masse interfacial} $\rightarrow$ transitoire \textcolor{OliveGreen}{(1)} : U et Zr vers l’acier \\
-      {\tiny (décalage à droite de \ce{ UO_2 + Zr <=> ZrO_2 + U } dans l'oxyde à l’interface)}
+      \item \emph{transfert de masse interfacial} $\rightarrow$ transitoire \textcolor{OliveGreen}{(1)} : \\ U et Zr vers l’acier {\tiny (décalage à droite de \ce{ UO_2 + Zr <=> ZrO_2 + U } dans l'oxyde à l’interface)}
       \item transport de masse intra-phase
-      \item ``inversion'' de $\rho_{oxy} \lessgtr \rho_{met}$ $\rightarrow$ \emph{instabilité de Rayleigh-Taylor}
-      \item mouvement hydrodynamique d'inversion de la position des phases
+      \item ``inversion'' de $\rho_{oxy} \lessgtr \rho_{met}$ $\rightarrow$ \emph{instabilité de Rayleigh-Taylor} puis inversion des phases
       \end{itemize}
       \item Deux \emph{cinétiques combinées} : ordres de grandeur pour \textcolor{OliveGreen}{(1)} :
       \begin{itemize}
-\item transport de masse intra-phase : $\tau_m = \frac{H^2}{D} \frac{1}{Sh}$ (masse $\Leftrightarrow$ $\tau_h = \frac{H^2}{\alpha} \frac{1}{Nu}$ chaleur) \\
-dans le métal, pour $H=5cm$, $Gr\approx4\times 10^{7}$, $Nu\approx10$ (\textit{cf.} TD) \\
-en considérant $D=5\times 10^{-9}$m$^2$.s$^{-1}$, $Sh/Nu\approx80$ $\rightarrow$ \emph{$\tau_m \approx 10$min}
+\item transport de masse intra-phase : $\tau_m = \frac{H^2}{D} \frac{1}{Sh}$ (masse $\Leftrightarrow$ $\tau_h = \frac{H^2}{\alpha} \frac{1}{Nu}$ chaleur)
+dans le métal, pour $H=5cm$, $Gr\approx4\times 10^{7}$, $Nu\approx10$ (\textit{cf.} TD)
+en considérant $D=5\times 10^{-9}$m$^2$.s$^{-1}$, $Sh/Nu\approx80$ \\$\rightarrow$ \emph{$\tau_m \approx 10$min}
 \item vitesse terminale de goutte pour l'instabilité de Rayleigh-Taylor $\rightarrow$ \emph{$\sim 10s.m^{-1}$}
       \end{itemize}
       \hskip -0.5cm $\rightarrow$ \emph{Transport intra-phase bien plus lent que mouvement hydrodynamique}
@@ -330,7 +319,7 @@ en considérant $D=5\times 10^{-9}$m$^2$.s$^{-1}$, $Sh/Nu\approx80$ $\rightarrow
       \begin{columns}
 \begin{column}{0.65\textwidth}
 \vskip 0.5\baselineskip
-\includegraphics[width=\textwidth]{Figures/rcw.png}
+\includegraphics[width=0.9\textwidth]{Figures/rcw.png}
 \end{column}
 \begin{column}{0.4\textwidth}
 \hskip -0.8cm \begin{minipage}{1.1\textwidth}
@@ -376,9 +365,8 @@ en considérant $D=5\times 10^{-9}$m$^2$.s$^{-1}$, $Sh/Nu\approx80$ $\rightarrow
 \end{columns}
 \end{itemize}
 \end{frame}
-\Intercalaire{Illustration du risque de percement de la cuve en transitoire \\ Résultats de simulation avec le code PROCOR \\ (développé au CEA Cadarache)}
+\transition[4]{Illustration du risque de percement de la cuve en transitoire}{Résultats de simulation avec le code PROCOR \\ (développé au CEA Cadarache)}
 \section{Illustration du risque de percement de la cuve en transitoire}
-\Titre{Illustration du risque de percement de la cuve en transitoire : résultats PROCOR}
 \begin{frame}[fragile]
 \vskip -0.5\baselineskip
 \begin{figure}[H]
